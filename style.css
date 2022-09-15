@@ -1,0 +1,121 @@
+.menuLateral{
+    width: 250px;
+    height: 100vh;
+    position: fixed;
+    top:0;
+    right: 0;
+    background-color: cornflowerblue;
+    z-index:2;
+    border-radius: 30px 0 0 30px;
+    box-shadow: -1px -2px 15px 2px rgba(0,0,0,0.35);
+}
+
+.menuLateral ul li{
+    list-style:none;
+    margin: 50px 20px;
+}
+
+.menuLateral ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+}
+
+.linea-1{
+    width: 15px;
+    height: 1px;
+    background-color:darkblue;
+    display: inline-block;
+}
+
+.linea-2{
+    width: 80px;
+    height: 1px;
+    background-color: darkblue;
+    display: inline-block;
+}
+
+.linea-3{
+    width: 60px;
+    height: 1px;
+    background-color: darkblue;
+    display: inline-block;
+}
+.linea{
+    line-height: 8px;
+}
+
+.header{
+    border: solid 4px red;
+    height: 100vh;
+    background-image: url(./img/brazo.jpg);
+    background-size:cover;
+    background-repeat: no-repeat;
+   
+}
+
+
+
+h1{
+    font-size: 60px;
+    text-shadow: 2px 2px 19px #CE5937;
+
+font-family: 'Rubik Moonrocks', cursive;
+}
+
+.contenedor{
+   
+    margin-top: 30px;
+    width: 400px;
+    margin-left: 60px;
+    padding: 60px;
+ 
+}   
+
+
+.parrafo_intro{
+    font-size: 20px;
+    line-height: 25px;
+    color:black;
+    width: 300px;
+}
+
+.texto_cabecera{
+   
+    max-width: 100%;
+}
+
+.boton_cabecera{
+    padding: 10px 70px;
+    outline: none;
+    background: cornflowerblue;
+    border: solid 2px darkblue;
+    border-radius: 20px;
+    color: white;
+    
+}
+.boton_cabecera:hover{
+    padding: 10px 60px;
+    outline: none;
+    background: white;
+    border: solid 2px darkblue;
+    color: cornflowerblue;
+    
+}
+
+#menuBtn{
+    width: 50px;
+    position: fixed;
+    right: 65px;
+    top: 35px;
+    z-index: 2;
+}   
+
+@media screen and (max-width: 600px) {
+
+    h1{
+       color: blue;
+    }
+        
+   
+}
