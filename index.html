@@ -4,24 +4,28 @@
     <!-- La etiqueta link sirve para 
         vincular el archivo html 
         con el archivo de estilos -->
-    
+
     <link rel="stylesheet" href="style.css">
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale clae=1.0">
     <title>Taller de Prorgamación</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap" rel="stylesheet">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Permanent+Marker&family=Rubik+Moonrocks&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Permanent+Marker&family=Rubik+Moonrocks&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nabla&display=swap" rel="stylesheet">
 </head>
 <body>
     <section class="header">
         <div class="contenedor">
             <div class="texto_cabecera">
-                <h1>Brazo Robótico</h1>
+                <h1 id="titulo">Brazo Robótico</h1>
                 <p class="parrafo_intro">Les presentamos el proyecto de Brazo Robótico realizado en conjunto 
                     con el taller de Tecnología y Control y Programación.</p>
             </div>
@@ -38,11 +42,28 @@
         </ul>
     </div>
     <img src="./img/icono.png" id="menuBtn">
-    <script>
+
+
+ <script>
         let menuBtn = document.getElementById("menuBtn");
         let sideNav = document.getElementById("sideNav");
-        sideNav.style.right = "-250px";
-    </script>i
+        let titulo = document.getElementById("titulo");
+        sideNav.style.right = "-260px";
+        menuBtn.onclick = function(){
+            if(sideNav.style.right == "-260px"){
+                sideNav.style.right = "0";
+            }else{
+                sideNav.style.right = "-260px";
+            }
+        }
+        titulo.onclick = function(){
+            if(sideNav.style.right == "-260px"){
+                sideNav.style.right = "0";
+            }else{
+                sideNav.style.right = "-260px";
+            }
+        }
+    </script>
 
 </body>
 </html>
