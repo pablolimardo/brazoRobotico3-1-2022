@@ -1,3 +1,7 @@
+*{
+    margin: 0;
+    padding: 0;
+}
 .menuLateral{
     border: solid 5px rgb(19, 248, 19);
     width: 250px;
@@ -50,7 +54,7 @@
     border: solid 4px red;
     height: 100vh;
     background-image: url(./img/foto-fondo.gif);
-    background-size:contain;
+    background-size:cover;
     background-repeat: no-repeat;
     background-position: center;
     background-color: #F9C0C0;
@@ -116,13 +120,13 @@ h1{
     z-index: 2;
 }   
 
-@media screen and (max-width: 600px) {
-
-    h1{
-       color: blue;
+@media only screen and (device-width : 375px) and (device-height : 812px) and (-webkit-device-pixel-ratio : 3) { 
+    .parrafo_intro{
+        font-size: 30px;
+        line-height: 25px;
+        color:black;
+        width: 80vw;
     }
-        
-   
 }
 
 .angry-animate{
